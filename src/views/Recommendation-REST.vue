@@ -1,5 +1,17 @@
 <template>
-  <div class="recommendation-rest">
-    <h1>This is the recommendation REST page</h1>
-  </div>
+    <RequestUrlDisplay />
 </template>
+
+<script>
+import RequestUrlDisplay from '../components/Request-url-display.vue'
+
+export default {
+    components:{
+        RequestUrlDisplay,
+    }
+}
+</script>
+
+<style>
+
+</style>

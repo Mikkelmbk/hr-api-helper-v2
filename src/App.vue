@@ -6,7 +6,9 @@
     <router-link to="/search-rest">Search REST Endpoint</router-link>
     <router-link to="/tracking-user-id">Tracking user id Endpoint</router-link>
   </div>
-  <router-view/>
+  <div id="content">
+    <router-view/>
+  </div>
 </template>
 
 <style>
@@ -29,6 +31,11 @@
 body{
   min-height:100vh;
   background-color: var(--primary-layout-bg-color);
+}
+
+#content{
+  width:80%;
+  max-width:1000px;
 }
 
 #app {
