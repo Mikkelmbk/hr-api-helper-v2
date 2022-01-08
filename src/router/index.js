@@ -8,8 +8,8 @@ import TrackingUserId from '../views/Tracking-user-id.vue'
 const routes = [
   // {
   //   path: '/',
-  //   name: 'Home',
-  //   component: Home
+  //   name: 'Recommendation-REST',
+  //   component: RecommendationREST
   // },
   // {
   //   path: '/about',
@@ -22,6 +22,7 @@ const routes = [
   {
     path: '/recommendation-rest',
     name: 'Recommendation-REST',
+    alias: '/',
     component: RecommendationREST
   },
   {
