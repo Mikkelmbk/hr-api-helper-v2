@@ -1,5 +1,5 @@
 <template>
-    <RequestUrlDisplay />
+    <RequestUrlDisplay url="https://www.addwish.com/api/v1/product-recommendation/getProductBoxes?format=json"/>
 </template>
 
 <script>
