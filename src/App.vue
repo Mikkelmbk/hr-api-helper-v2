@@ -10,31 +10,48 @@
 </template>
 
 <style>
-body{
+:root{
+  --primary-elem-color:white;
+  --primary-layout-bg-color:rgb(27, 27, 27);
+  --primary-elem-bg-color: rgb(39, 39, 39);
+  --primary-extra-color:#298eea;
+}
+
+* {
   margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none;
+  list-style-type:none;
+  letter-spacing:0.5px;
+}
+
+body{
+  min-height:100vh;
+  background-color: var(--primary-layout-bg-color);
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family:  Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
   display:flex;
   justify-content: space-evenly;
+  background-color: var(--primary-elem-bg-color);
+  margin-bottom:60px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
-  text-decoration:none;
+  padding: 25px 15px;
+  color: var(--primary-elem-color);
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  background-color: var(--primary-extra-color);
+  border-radius:3px;
 }
 </style>
